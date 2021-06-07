@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+body {
+    background: #282A36;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #282A36;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+li {
+    list-style: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #f1fa8c;
+    font-size: 1.5rem;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ff79c6;
+    font-family: 'Fugaz One', cursive;
+
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+}
+
+#welcome-section p {
+    font-size: 2.5rem;
+}
+
+@media(max-width: 650px) {
+  #welcome-section h1 {
+      font-size: 2rem;
+  }
+
+  #welcome-section p {
+      font-size: 1.2rem;
+  } 
+  
+  #navbar ul {
+    height: 50px;
+  }
+  
+  .nav-links {
+    font-size: 1rem;
+  }
+}
+
+#projects {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#projects-header {
+    color: #ff5555;
+    font-family: 'Fugaz One', cursive;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+    margin-bottom: 80px;
+    grid-gap: 2rem 2rem;
+    width: 100%;
+    margin: auto;
+    max-width: 1280px;
+    font-size: 0;
+}
+
+@media(max-width: 650px) {
+  .projects-grid {
+    width: 80%;
+  }
+}
+
+.project-tile {
+    text-decoration: none;
+    color: #f8f8f2;
+}
+
+.project-img {
+    height: calc(100% - 4rem);
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+}
+
+.project-title {
+    background-color: #44475a;
+    font-size: 1.4rem;
+    padding: 10px ;
+    //margin-bottom: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+footer {
+    //border: solid;
+    box-shadow: 0 -4px 10px 0 rgba(0,0,0,0.2);
+    //text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+
+.social-links {
+    color: #50fa7b;
+    text-decoration: none;
+    margin: 25px;
+}
+
+#social > ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+footer > p {
+    color: #f8f8f2;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.fa-heart {
+    color: #ff5555;
+}
